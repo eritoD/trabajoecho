@@ -41,7 +41,7 @@ let tabInputs = document.querySelectorAll(".tabInput");
 tabInputs.forEach(function(input){
 
     input.addEventListener('change', function(){
-        let id= input.ariaValueMax;
+        let id = input.ariaValueMax;
         let thisSwiper = document.getElementById('swiper' + id);
         thisSwiper.swiper.update();
     })

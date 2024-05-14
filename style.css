@@ -122,7 +122,7 @@ body {
 
 .header-content {
     margin-top: 200px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
 }
 
 .slider {
@@ -195,7 +195,7 @@ body {
     color: #a7a7a7;
     font-weight: 700;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: uppercase; /*por que?*/
     transition: background ease 0.2s;
 }
 
