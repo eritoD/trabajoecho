@@ -53,21 +53,22 @@
         </div>    
        
     </header> -->
-  
-    <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
-    <label for="tab1">hambuerguesa</label>
-    <div class="tab">
-        <div class="swiper mySwiper-2" id="swiper1">
-            <div class="swiper-wrapper">
-                
-                <div id="cosas"></div>
+  <div class="products">
+        <div class=" container">
+            <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+            <label for="tab3">hambuerguesa</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        
+                        <div id="cosas"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
         </div>
     </div>
-
-
 
 
   <!-- Scripts -->
@@ -81,41 +82,7 @@
     
 
 
-    <script>
- const settings = {
-	async: true,
-	crossDomain: true,
-	url: 'https://pokemon-go1.p.rapidapi.com/type_effectiveness.json',
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'c93daf93b2msh09a39a66c8e3902p1dbdcfjsn0a02a09d3934',
-		'X-RapidAPI-Host': 'pokemon-go1.p.rapidapi.com'
-	}
-};
-
-$.ajax(settings).done(function (response) {
-	console.log(response);
-
-    $.each(response, function(i,item){
-        $("#cosas").append(    
-        '<div class="swiper-slide">' +
-                '<div class="product">' +
-                    '<div class="product-img">' +
-                        '<h4>ansklcnailcni</h4>' +
-                        '<img src="images/food1.png" alt="">' +
-                    '</div>' +
-                    '<div class="product-txt">' +
-                        '<h4>producto</h4>' +
-                        '<p>calidad premium</p>' +
-                        '<span class="price">$80.00</span>' +
-                    '</div>' +
-                '</div>' +
-            '</div>'
-        );
-    });
-
-});
-    </script>
+<script src="jspruebas.js"></script>
 
 
 </body>
