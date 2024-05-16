@@ -4,57 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ******nabvar***** -->
+    <!-- <header>
 
-    <header>
         <div class="menu container" id="inicio">
-            <img class="logo-1" src="images/logo.svg" alt="">
-            <input type="checkbox"  id="menu">
-            <label for="menu">
-                <img src="images/menu.png" class="menu-icono" alt="">
-            </label>
-            <nav class="navbar">
-                <div class="menu-1">
-                    <ul>
-                        <li> <a href="#inicio">inicio</a></li>
-                        <li><a href="#">servicios</a></li>
-                        <li><a href="#somos">somos</a></li>
-                    </ul>
-                </div>
-                <img class="logo-2" src="images/logo.svg" alt="">
-                <div class="menu-2">
-                    <ul>
-                        <li><a href="login.html">iniciar sesion</a></li>
-                    </ul>
-
-                    <div class="socials">
-                        <a href="https://web.facebook.com/groups/950968136546516?locale=es_LA">
-                            <div class="social">
-                                <img src="images/s1.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="https://twitter.com/digitalesps93">
-                            <div class="social">
-                                <img src="images/s2.svg" alt="">
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/juegosdigitalesbaratos.cl/">
-                            <div class="social">
-                                <img src="images/s3.svg" alt="">
-                            </div>
-                        </a>
+                <img class="logo-1" src="images/logo.svg" alt="">
+                <input type="checkbox"  id="menu">
+                <label for="menu">
+                    <img src="images/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <div class="menu-1">
+                        <ul>
+                            <li> <a href="index.html">inicio</a></li>
+                            <li><a href="#">servicios</a></li>
+                            <li><a href="#somos">productos</a></li>
+                        </ul>
                     </div>
-                </div>
-            </nav>
-    </div>    
-    </header>
-    <section>
-        
-    </section>
+                    <img class="logo-2" src="images/logo.svg" alt="">
+                    <div class="menu-2">
+                        <ul>
+                            <li><a href="#">horario</a></li>
+                        </ul>
 
-   <script src="scrpt.js"></script>
+                        <div class="socials">
+                            <a href="#">
+                                <div class="social">
+                                    <img src="images/s1.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="social">
+                                    <img src="images/s2.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="social">
+                                    <img src="images/s3.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+        </div>    
+       
+    </header> -->
+  
+    <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+    <label for="tab1">hambuerguesa</label>
+    <div class="tab">
+        <div class="swiper mySwiper-2" id="swiper1">
+            <div class="swiper-wrapper">
+
+                <div id="cosas"></div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+
+
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+    
+
+
+    <script>
+ const settings = {
+	async: true,
+	crossDomain: true,
+	url: 'https://pokemon-go1.p.rapidapi.com/type_effectiveness.json',
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'c93daf93b2msh09a39a66c8e3902p1dbdcfjsn0a02a09d3934',
+		'X-RapidAPI-Host': 'pokemon-go1.p.rapidapi.com'
+	}
+};
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+
+    $.each(response, function(i,item){
+        $("#cosas").append(    
+        '<div class="swiper-slide">' +
+                '<div class="product">' +
+                    '<div class="product-img">' +
+                        '<h4>ansklcnailcni</h4>' +
+                        '<img src="img" alt="">' +
+                    '</div>' +
+                    '<div class="product-txt">' +
+                        '<h4>producto</h4>' +
+                        '<p>calidad premium</p>' +
+                        '<span class="price">$80.00</span>' +
+                    '</div>' +
+                '</div>' +
+            '</div>'
+        );
+    });
+
+});
+    </script>
+
 
 </body>
-</html>
+</html>,o
