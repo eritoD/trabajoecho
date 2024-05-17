@@ -12,7 +12,41 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+                
+                <nav class="navbar">
+                    <div class="menu-1">
+                        <ul>
+                            <li> <a href="index.html">inicio</a></li>
 
+                        </ul>
+                    </div>
+                    <img class="logo-2" src="images/logo.svg" alt="">
+                    <div class="menu-2">
+                        <ul>
+                            <li><a href="login.html">iniciar sesion</a></li>
+                        </ul>
+
+                        <div class="socials">
+                            <a href="https://web.facebook.com/groups/950968136546516?locale=es_LA">
+                                <div class="social">
+                                    <img src="images/s1.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/digitalesps93">
+                                <div class="social">
+                                    <img src="images/s2.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/juegosdigitalesbaratos.cl/">
+                                <div class="social">
+                                    <img src="images/s3.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+        </div>
     
 
 
@@ -21,7 +55,7 @@
 
 
 
-    <div id="" class="container">
+    <div id="general" class="container prueba">
             <div class="row" id="cosas"></div>
     </div>
 
@@ -45,8 +79,8 @@ $.ajax(settings).done(function (response) {
     $.each(response, function(i, item){
         $("#cosas").append(
             `                            
-            <div class="card col-3" style="width: 18rem;">
-  <img src="${item.thumb}" height="215px" class="card-img-top" alt="...">
+            <div class="card col-3" >
+  <img src="${item.thumb}" height="150px" class="card-img-top"  alt="...">
   <div class="card-body">
     <h5 class="card-title">${item.title}</h5>
     <p class="card-text">${item.normalPrice}</p>

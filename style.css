@@ -8,7 +8,27 @@
   list-style: none;
 }
 
+div#general{
+    margin:auto;
+    background-color: #142850;  
+    width: 960px;
+    margin-bottom: 0% !important;
+    
+}
 
+.card{
+    margin-top: 30px !important;
+    margin-left: 50px !important;
+    margin-right: 20px !important;
+    margin-bottom: 10px !important;
+    padding: 10px;
+    background-color:  transparent  ;
+    background-color: #27496D;
+    border: solid 2px;
+    color: #ffffff;
+    transition: background-color 3s ease;
+    border-radius: 20px;
+}
 
 body {
   background-color: #142850;
@@ -126,10 +146,7 @@ body {
     margin-top: 200px;
     padding-bottom: 50px; 
 }
-.prueba{
-    margin-top: 200px;
-    padding-bottom: 50px; 
-}
+
 .slider {
     display: flex;
     align-items: center;
