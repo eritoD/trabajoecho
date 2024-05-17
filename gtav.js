@@ -6,6 +6,7 @@ const carrito = document.getElementById('carrito');
 const elementos1 = document.getElementById('lista-1');
 const elementos2 = document.getElementById('lista-2');
 const elementos3 = document.getElementById('lista-3');
+const elementos4 = document.getElementById('lista-4');
 const lista = document.querySelector('#lista-carrito tbody');
 /**donde le doy el valor del a o lo que tenga el vaciar caro. se coloca el id="vaciar-carrito" */
 const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
@@ -18,6 +19,7 @@ function cargarEventListeners(){
     elementos1.addEventListener('click', comprarElemento);
     elementos2.addEventListener('click', comprarElemento);
     elementos3.addEventListener('click', comprarElemento);
+    elementos4.addEventListener('click', comprarElemento);
     carrito.addEventListener('click', eliminarElemento);
     vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
 }
@@ -33,7 +35,7 @@ function comprarElemento(e){
 
 function leerDatosElemento(elemento){
     const infoElemento = {
-        imagen: elemento.querySelector('h2').textContent,
+        imagen: elemento.querySelector('h5').textContent,
         titulo: elemento.querySelector('h1').textContent,
         precio: elemento.querySelector('.precio').textContent,
         id: elemento.querySelector('a').getAttribute('data-id')

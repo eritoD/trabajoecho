@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Principal</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -27,6 +27,25 @@
                         <ul>
                             <li> <a href="#inicio">Inicio</a></li>
                             <li><a href="#somos">Quienes somos</a></li>
+                            
+                            <!-- carro de compras -->
+                            <li class="submenu carrito" >
+                                <img src="images/cart-add-regular-48.png" id="" alt="">
+                                <div id="carrito">
+                                    <table id="lista-carrito">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                </div>
+                            </li>
                             
                         </ul>
                     </div>
@@ -51,68 +70,49 @@
                                     <img src="images/s3.svg" alt="">
                                 </div>
                             </a>
-                            <a href="">
-                                <div class="social">
-                                    <li class="submenu carrito" >
-                                        <img src="images/cart-add-regular-48.png" id="" alt="">
-                                        <div id="carrito">
-                                            <table id="lista-carrito">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Imagen</th>
-                                                        <th>Nombre</th>
-                                                        <th>Precio</th>
-                                                        <th></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody></tbody>
-                                            </table>
-                                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
-                                        </div>
-                                    </li>
-                                </div>
-                            </a>
+
                         </div>
                     </div>
                 </nav>
                 
         </div>  
-        
-        
-
+       
         <!-- inicio del carrusel -->
         <div class="header-content container"> 
 
             <div class="swiper mySwiper-1">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    <div class="swiper-slide" >
                         <div class="slider">
                             <div class="slider-txt">
                                 
                                 <h1>Sonic</h1>
                                 <h2>Superrápido. Superdivertido. ¡Superstars!</h2>
-                                <p>Recorre las místicas Northstar Islands en la renovación del clásico juego de plataformas 2D de acción a alta velocidad de Sonic. Juega como Sonic</p>
+                                <p class="precio">Recorre las místicas Northstar Islands en la renovación del clásico juego de plataformas 2D de acción a alta velocidad de Sonic. Juega como Sonic</p>
                                 <div class="botones">
                                     <a href="lego.html" class="btn-1">Catalogo</a> 
-                                    <a href="#" class="btn-1" data-id="1"><i class='bx bx-cart-add'></i></a>
+                                    <a href="#" class="agregar-carrito btn-1" id="lista-1" data-id="1" ><i class='bx bx-cart-add'></i></a>
                                 </div>
                             </div>
                                 <div class="slider-img">
-                                    <img src="images/sonic.avif" alt="">
+                                    <img src="images/sonic.avif"  alt="">
                                 </div>
                         </div>
                     </div>
+
+        
+                    
                     
                     <div class="swiper-slide">
                         <div class="slider">
                             <div class="slider-txt">
                                 <h1>Gta v</h1>
-                                <h2>Te damos la bienvenida a Los Santos</h2>
+                                <h2  class="precio">Te damos la bienvenida a Los Santos</h2>
                                 <p>Un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal.</p>
                                 <div class="botones">
                                   
                                     <a href="gta.html" class="btn-1">Catalogo</a> 
-                                    <a href="#" class="btn-1"><i class='bx bx-cart-add'></i></a>
+                                    <a href="#" class="agregar-carrito btn-1" id="lista-2" data-id="1" ><i class='bx bx-cart-add'></i></a>
                                 </div>
                             </div>
                                 <div class="slider-img">
@@ -124,12 +124,13 @@
                         <div class="slider">
                             <div class="slider-txt">
                                 <h1>Call Of Duty</h1>
-                                <h2>DESPLIÉGATE, ÁRMATE, SAQUEA Y LUCHA HASTA ALCANZAR LA VICTORIA.</h2>
+                                <h2 class="precio">DESPLIÉGATE, ÁRMATE, SAQUEA Y LUCHA HASTA ALCANZAR LA VICTORIA.</h2>
                                 <p>Sube el nivel de actividad y adéntrate al nuevo mapa, Al Mazrah, con experiencias innovadoras en la jugabilidad que atraen a todo tipo de jugadores.</p>
                                 <div class="botones">
                                     
                                     <a href="COD.html" class="btn-1">Catalogo</a> 
-                                    <a href="#" class="btn-1"><i class='bx bx-cart-add'></i></a>
+                                   <a href="#" class="agregar-carrito btn-1" id="lista-3" data-id="1" > agregar</a>
+                                   <!-- <i class='bx bx-cart-add'></i> -->
                                 </div>
                             </div>
                                 <div class="slider-img">
@@ -448,7 +449,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		
 			<script src="assets/js/operaciones.js"></script>
 			<!-- <script src="assets/js/multi.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
