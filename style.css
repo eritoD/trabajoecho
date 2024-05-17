@@ -16,6 +16,17 @@ div#general{
     
 }
 
+div#cosas{
+    margin-top: 0px;
+}
+
+div#centtro{
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 150px;
+    color: #ffffff;
+}
+
 .card{
     margin-top: 30px !important;
     margin-left: 50px !important;
@@ -79,19 +90,21 @@ body {
 
 .menu-1 {
     margin-right: 180px;
+    margin-top: 20px;
 }
 .menu-2 {
     margin-left: 180px;
     display: flex;
     align-items: center;
+   
 }
 
 .logo-1 {
     width: 0;
 }
-.logo-2 {
+/* .logo-2 {
     width: 150px;
-}
+} */
 
 .socials {
     display: flex;
@@ -314,7 +327,7 @@ body {
 
 .info-img img {
     width: 500px;
-    height: 250px;
+    height: 500px;
 }
 
 .info-txt {
@@ -499,8 +512,15 @@ body {
     display: inline-block;
 }
 
-@media(max-width: 991px){
+@media(max-width: 750px){
     
+    html{
+        font-size: 12px;
+
+    }
+
+    
+
     .menu{
         padding: 20px;
         justify-content: space-between;
@@ -658,4 +678,20 @@ body {
         margin: 25px 0px 10px 0px;
     }
 
+}
+
+@media screen and (max-width:420px) {
+    html{
+        font-size: 10px;
+
+    }
+
+    .container{
+        height: auto;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        flex-direction: column;
+    }
 }
