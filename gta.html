@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <!-- navbar -->
   <header>              
     <div class="menu container" id="inicio">
         <img class="logo-1" src="images/LOGOSQLZO.png" alt="">
@@ -21,10 +21,9 @@
             <img src="images/menu.png" class="menu-icono" alt="">
         </label>
         <nav class="navbar">
-            <div class="menu-1">
+            <div class="menu-3">
                 <ul>
-                    <li> <a href="#inicio">Inicio</a></li>
-                    <li><a href="#somos">Quienes somos</a></li>
+                    <li> <a href="index.html">Inicio</a></li>
                 </ul>
             </div>
             <img class="logo-2" src="images/LOGOSQLZO.png" height="100px" alt="">
@@ -58,17 +57,17 @@
 
 
 
-
+<!-- Inicio cards -->
 <section>
     <div id="general" class="container prueba">
         <div id="centtro" class="row">
-            <h1>juegos lego</h1>
+            <h1>juegos Grand Theft Auto </h1>
         </div>
             <div class="row" id="cosas">
             </div>
     </div>
 </section>
-
+<!-- informacion SQLZO -->
 <footer class="footer  horario">
         
     <div class="horario-info container">
@@ -114,13 +113,15 @@
     const settings = {
 	async: true,
 	crossDomain: true,
-	url: 'https://cheapshark-game-deals.p.rapidapi.com/deals?lowerPrice=0&steamRating=0&title=lego&desc=0&output=json&steamworks=0&sortBy=Deal%20Rating&AAA=0&pageSize=60&exact=0&upperPrice=50&pageNumber=0&onSale=0&metacritic=0&storeID%5B0%5D=1%2C2%2C3',
+	url: 'https://cheapshark-game-deals.p.rapidapi.com/deals?lowerPrice=0&steamRating=0&title=Grand%20Theft%20Auto&desc=0&output=json&steamworks=0&sortBy=Deal%20Rating&AAA=0&pageSize=60&exact=0&upperPrice=50&pageNumber=0&onSale=0&metacritic=0&storeID%5B0%5D=1%2C2%2C3',
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'c93daf93b2msh09a39a66c8e3902p1dbdcfjsn0a02a09d3934',
+		'X-RapidAPI-Key': '6bfbe18aa7msh199419cf596f99dp17890fjsn328109e38b6e',
 		'X-RapidAPI-Host': 'cheapshark-game-deals.p.rapidapi.com'
 	}
 };
+
+
 
 $.ajax(settings).done(function (response) {
 	console.log(response);

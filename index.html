@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
 </head>
 
@@ -26,6 +27,7 @@
                         <ul>
                             <li> <a href="#inicio">Inicio</a></li>
                             <li><a href="#somos">Quienes somos</a></li>
+                            
                         </ul>
                     </div>
                     <img class="logo-2" src="images/LOGOSQLZO.png" height="100px" alt="">
@@ -33,7 +35,6 @@
                         <ul>
                             <li><a href="login.html">iniciar sesion</a></li>
                         </ul>
-
                         <div class="socials">
                             <a href="https://web.facebook.com/groups/950968136546516?locale=es_LA">
                                 <div class="social">
@@ -50,10 +51,34 @@
                                     <img src="images/s3.svg" alt="">
                                 </div>
                             </a>
+                            <a href="">
+                                <div class="social">
+                                    <li class="submenu carrito" >
+                                        <img src="images/cart-add-regular-48.png" id="" alt="">
+                                        <div id="carrito">
+                                            <table id="lista-carrito">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Imagen</th>
+                                                        <th>Nombre</th>
+                                                        <th>Precio</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+                                            <a href="#" id="vaciar-carrito" class="btn-3">Vaciar Carrito</a>
+                                        </div>
+                                    </li>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </nav>
-        </div>    
+                
+        </div>  
+        
+        
 
         <!-- inicio del carrusel -->
         <div class="header-content container"> 
@@ -63,14 +88,17 @@
                     <div class="swiper-slide">
                         <div class="slider">
                             <div class="slider-txt">
-                                <h1>Lego</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad sunt soluta laboriosam eligendi atque porro enim, sit ipsam voluptate hic nulla inventore assumenda! A, tenetur! Fuga nobis quia fugit!</p>
+                                
+                                <h1>Sonic</h1>
+                                <h2>Superrápido. Superdivertido. ¡Superstars!</h2>
+                                <p>Recorre las místicas Northstar Islands en la renovación del clásico juego de plataformas 2D de acción a alta velocidad de Sonic. Juega como Sonic</p>
                                 <div class="botones">
-                                    <a href="apiprueba.html" class="btn-1">Catalogo</a> 
+                                    <a href="lego.html" class="btn-1">Catalogo</a> 
+                                    <a href="#" class="btn-1" data-id="1"><i class='bx bx-cart-add'></i></a>
                                 </div>
                             </div>
                                 <div class="slider-img">
-                                    <img src="images/lego.jpeg" alt="">
+                                    <img src="images/sonic.avif" alt="">
                                 </div>
                         </div>
                     </div>
@@ -78,11 +106,13 @@
                     <div class="swiper-slide">
                         <div class="slider">
                             <div class="slider-txt">
-                                <h1>gta v</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad sunt soluta laboriosam eligendi atque porro enim, sit ipsam voluptate hic nulla inventore assumenda! A, tenetur! Fuga nobis quia fugit!</p>
+                                <h1>Gta v</h1>
+                                <h2>Te damos la bienvenida a Los Santos</h2>
+                                <p>Un joven estafador callejero, un ladrón de bancos retirado y un psicópata aterrador se ven involucrados con lo peor y más desquiciado del mundo criminal.</p>
                                 <div class="botones">
                                   
-                                    <a href="#" class="btn-1">Catalogo</a> 
+                                    <a href="gta.html" class="btn-1">Catalogo</a> 
+                                    <a href="#" class="btn-1"><i class='bx bx-cart-add'></i></a>
                                 </div>
                             </div>
                                 <div class="slider-img">
@@ -93,15 +123,17 @@
                     <div class="swiper-slide">
                         <div class="slider">
                             <div class="slider-txt">
-                                <h1>pokemon</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ad sunt soluta laboriosam eligendi atque porro enim, sit ipsam voluptate hic nulla inventore assumenda! A, tenetur! Fuga nobis quia fugit!</p>
+                                <h1>Call Of Duty</h1>
+                                <h2>DESPLIÉGATE, ÁRMATE, SAQUEA Y LUCHA HASTA ALCANZAR LA VICTORIA.</h2>
+                                <p>Sube el nivel de actividad y adéntrate al nuevo mapa, Al Mazrah, con experiencias innovadoras en la jugabilidad que atraen a todo tipo de jugadores.</p>
                                 <div class="botones">
                                     
-                                    <a href="#" class="btn-1">Catalogo</a> 
+                                    <a href="COD.html" class="btn-1">Catalogo</a> 
+                                    <a href="#" class="btn-1"><i class='bx bx-cart-add'></i></a>
                                 </div>
                             </div>
                                 <div class="slider-img">
-                                    <img src="images/pokemongo.jpg" height="300px" alt="">
+                                    <img src="images/cod.avif" height="300px" alt="">
                                 </div>
                         </div>
                     </div>
@@ -285,21 +317,23 @@
         </div>
         <div class="info-txt" >
             <h2>¿quienes somos?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque amet culpa quaerat sit repudiandae magni dolorum hic soluta quam. A vero quod deserunt obcaecati explicabo officia repellat blanditiis culpa.</p>
+            <p></p>
                 <!--Boton-->
             <div class="boton-modal">
                 <label for="btn-modal">
-                    informacion+
+                    Informacion
                 </label>
             </div>
             <!--Fin de Boton-->
             <!--Ventana Modal-->
                 <input type="checkbox" id="btn-modal">
                 <div class="container-modal">
-                    <div class="content-modal">
+                    <div class="content-modal" id="img-modal">
                         <h3>¿Quienes somos?</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore debitis amet ipsam, id eius modi animi voluptates, vitae doloremque ullam fuga hic aut quas dignissimos sapiente delectus! Libero, laboriosam sequi!</p>
-                        <img src="img/batman.jpeg" alt="">
+                        <p>Sqlzo es una comunidad compuesta por tres integrantes: <br>
+                            Erick Diaz <br> Benjamin Pezoa <br> Bryan Muñoz
+                        </p>
+                        <img src="images/LOGOSQLZO.png" height="150px" alt="">
                         <div class="btn-cerrar">
                             <label for="btn-modal">Cerrar</label>
                         </div>
@@ -419,6 +453,7 @@
 			<!-- <script src="assets/js/multi.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="scrpt.js"></script>
+    <script src="carrito.js"></script>
 
 </body>
 </html>
