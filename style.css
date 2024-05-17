@@ -8,6 +8,14 @@
   list-style: none;
 }
 
+div#general{
+    margin:auto;
+    background-color: #A0E9FF;  
+    width: 960px;
+    margin-bottom: 0% !important;
+    
+}
+
 body {
   background-color: #142850;
   font-family: "Poppins", sans-serif;
