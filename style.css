@@ -8,6 +8,8 @@
   list-style: none;
 }
 
+
+
 body {
   background-color: #142850;
   font-family: "Poppins", sans-serif;
@@ -124,7 +126,10 @@ body {
     margin-top: 200px;
     padding-bottom: 50px; 
 }
-
+.prueba{
+    margin-top: 200px;
+    padding-bottom: 50px; 
+}
 .slider {
     display: flex;
     align-items: center;
