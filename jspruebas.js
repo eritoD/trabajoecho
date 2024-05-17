@@ -12,16 +12,16 @@ const settings = {
 $.ajax(settings).done(function (response) {
 	console.log(response);
 
-    $.each(response, function(i,item){
-        $("#cosas").append(    
-        '<div class="swiper-slide">' +
+    $.each(response, function(i, item){
+        $("#cosas").append(
+            '<div class="swiper-slide">' +
                 '<div class="product">' +
                     '<div class="product-img">' +
-                        '<h4>ansklcnailcni</h4>' +
+                        '<h4>' + item.bug + '</h4>' +
                         '<img src="images/food1.png" alt="">' +
                     '</div>' +
                     '<div class="product-txt">' +
-                        '<h4>producto</h4>' +
+                        '<h4>'+item.dark+'</h4>' +
                         '<p>calidad premium</p>' +
                         '<span class="price">$80.00</span>' +
                     '</div>' +
@@ -29,7 +29,23 @@ $.ajax(settings).done(function (response) {
             '</div>'
         );
     });
-
 });
 
 
+
+    //     $("#movie").append(`         <div class="img-card iCard-style3">
+    //             <div class="card-content">
+    //                 <div class="card-image">
+    //                     <span id="tilte" class="card-title">${item.title}</span>
+    //                     <img src="${item.image}"/>
+    //                 </div>
+                    
+    //                 <div class="card-text">
+    //                     <p>
+    //                         ${item.description}
+    //                     </p>
+    //                 </div>
+    //                <a href="${item.imdb_link}"> <button class="btn btn-info">Ver IDMB</button></a>
+                    
+    //             </div> `)
+    // })
